@@ -1,0 +1,219 @@
+*,html,body{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-size: 10px;
+}
+body{
+  display: flex;
+  flex-flow:nowrap;
+  justify-content: center;
+  /* background-color: rgba(26,67,36,.9); */
+  background: url("../images/darkBG.jpg");
+}
+.border{
+  border: 1px solid black;
+}
+h1{
+  font-size: 5rem;
+}
+.potContainer p{
+  display: inline-block;
+}
+.arcade{
+  margin-top: 1rem;
+  /* background:gray; */
+  width: 1200px;
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  overflow: hidden;
+}
+/* rgba(214,73,57,1); */
+.titleSection{
+  box-sizing: border-box;
+  width: 86%;
+  height: 180px;
+  border-left: 6px solid rgba(214,73,57,1);
+  border-right: 6px solid rgba(214,73,57,1);
+  text-align: center;
+  /* border:8px solid rgba(67,67,67,.9); */
+  background-color: rgba(18, 17, 17,1);
+  display: flex;
+  justify-content: center;
+}
+
+.titleSection img{
+  width:65%;
+  object-fit: contain;
+}
+.noselect {
+  -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Safari */
+     -khtml-user-select: none; /* Konqueror HTML */
+       -moz-user-select: none; /* Old versions of Firefox */
+        -ms-user-select: none; /* Internet Explorer/Edge */
+            user-select: none; /* Non-prefixed version, currently
+                                  supported by Chrome, Edge, Opera and Firefox */
+}
+
+.displaySection{
+  width:81%;
+  height:475px;
+  border: 1px solid black;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-left: 6px solid rgba(214,73,57,1);
+  border-right: 6px solid rgba(214,73,57,1);
+  background-color:rgba(18, 17, 17,1);
+}
+/* color:rgba(67,67,67,.9); */
+.screen{
+  width: 87.2%;
+  height: 80%;
+  border:1rem solid rgba(67,67,67,.9);
+  border-radius:255px 255px 255px 255px / 45px 45px 45px 45px;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 80% 20%;
+  background-color: rgba(62,65,64,.9);
+}
+.reelContainer{
+  display: flex;
+  justify-content:space-around;
+  align-items: center;
+}
+.reel1{
+  width:33%;
+  height: 100%
+  display: flex;
+  justify-content:center;
+  align-items: center;
+  /* border:3px solid black; */
+}
+.yer{
+  box-shadow: 0 9px #999;
+}
+.reel2{
+  width:33%;
+  display: flex;
+  justify-content:center;
+  align-items: center;
+}
+.reel3{
+  width:33%;
+  display: flex;
+  justify-content:center;
+  align-items: center;
+}
+.gameData{
+  display: flex;
+  justify-content:space-around;
+  align-items: center;
+}
+
+.buttonSection{
+  display: flex;
+  justify-content: center;
+  background-color: gray;
+  position: relative;
+  width: 100%;
+  height: 25vh;
+  clip-path:polygon(
+    9.35% 0%,
+    90.60% 0%,
+    100% 100%,
+    0%  100%
+    );
+  border:3px solid rgba(67,67,67,.9);
+  border-top: none;
+  padding-top: 1rem;
+  background-color: rgba(18, 17, 17,1);
+}
+.buttonContainer{
+  width: 81.25%;
+  display: flex;
+  justify-content:space-between;
+}
+
+.leftSide{
+  width: 40%;
+  display: grid;
+  grid-template-columns: 47% 47%;
+  grid-template-rows: 47% 47%;
+  grid-row-gap: 3%;
+  grid-column-gap: 3%;
+}
+.green{
+  background-color: rgba(179,198,92,.7)
+}
+button{
+  font-size: 2.5rem;
+  border: none;
+  margin: 0;
+
+}
+#statusButton{
+  float: left;
+}
+#minBetButton{
+  width: 62%;
+  height: 100%;
+  border-radius: 50%;
+  display: block;
+}
+#maxBetButton{
+  width: 62%;
+  height: 100%;
+  border-radius: 50%;
+  display: block;
+}
+#decrementFiveButton{
+  width: 62%;
+  height: 100%;
+  border-radius: 50%;
+  display: block;
+}
+#incrementFiveButton{
+  width: 62%;
+  height: 100%;
+  border-radius: 50%;
+  display: block;
+}
+
+.rightSide{
+  width: 60%;
+  display: flex;
+  justify-content:space-around;
+  align-items: center;
+
+}
+
+#spinButton,#resetButton{
+  width: 27%;
+  height: 48%;
+  border-radius: 50%; */
+  /* display: block; */
+}
+.buttonFlex{
+  width: 95%;
+  height:95%;
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+}
+.buttonLabel{
+  color: white;
+  font-size: 2rem;
+  text-align: center;
+}
+.runOff{
+  border:8px solid rgba(67,67,67,.9);
+  border-top: none;
+  border-bottom: none;
+  width: 100%;
+  height: 4.2vh;
+  background-color: rgba(18, 17, 17,1);
+}
